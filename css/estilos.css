@@ -16,7 +16,7 @@ background-color: none;
 *{
 margin: 0;
 padding: 0;
-font-family: Letra2;
+font-family: Letra2, Verdana, Arial, Helvetica;
 text-decoration:none;
 }
 
@@ -128,7 +128,7 @@ background-image: url('../img/iconos.png');
 #redes{ max-width: 300px; background-color: none; margin-right: auto; margin-left: auto; margin-top: 25px; }
 
 #contacto{ 
-max-width: 290px; height: 40px; background-color: #00CA60; margin-top:10px; font-family: Letra1; font-size: 27px;
+max-width: 290px; height: 40px; background-color: #00CA60; margin-top:10px; font-family: Letra1, Verdana, Arial, Helvetica; font-size: 27px;
 text-align: center; padding: 10px;
 cursor: pointer; color: #FFF;
 border-bottom-right-radius: 22px; -ms-border-bottom-right-radius: 22px; -webkit-border-bottom-right-radius: 22px; -ms-border-bottom-right-radius: 22px;
