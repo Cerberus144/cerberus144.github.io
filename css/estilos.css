@@ -27,8 +27,8 @@ position: fixed;
 margin-top: -100px;
 }
 
-.psr{ font-size: 33px; font-family: Letra1; color: #00A54F; }
-.psr2{ font-size: 20px; font-family: Letra2; color: #000; }
+.psr{ font-size: 33px; font-family: Letra1, Verdana, Arial, Helvetica; color: #00A54F; }
+.psr2{ font-size: 20px; font-family: Letra2, Verdana, Arial, Helvetica; color: #000; }
 .dominio{ margin-left: 30px; }
 
 #btn_menu{
@@ -190,7 +190,7 @@ background-position: center;
 background-attachment: fixed;
 }
 
-.dominio{ margin-left: 0px; margin-top: -30px; }
+.dominio{ margin-left: 0px; margin-top: -15px; }
 
 }
 
