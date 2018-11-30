@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<title> Api notifications</title>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+
+</head>
+
+<style>
+button { min-width: 250px; height: 40px; font-size: 20px; }
+</style>
+
+<body>
+
+<button id="aut">Pedir autorización</button><br>
+<button id="ver">Verificar</button><br>
+<button id="notificacion">Mostrar notificacion</button><br>
+<button id="cerrar">Cerrar notificacion</button><br>
+
+
+<script>
+var aut = document.querySelector("#aut");
+var not = document.querySelector("#notificacion");
+var ver = document.querySelector("#ver");
+var cerrar = document.querySelector("#cerrar");
+var notificacion;
+aut.addEventListener("click", function(){
+Notification.requestPermission();
+})
+ver.addEventListener("click", function(){
+console.log(Notification.permission);
+})
+not.addEventListener("click", function(){
+notificacion = new Notification("Hola que tul", {
+body : "Este es un ejemplo de notificación, tan lindo que va en el cuerpos",
+icon : "notificaIcon.gif",
+image : "notificaImg.jpg"
+});
+notificacion.onclick = function(){
+console.log("Has clickado notificación");
+}
+notificacion.addEventListener("close", function(){
+console.log("Has cerrado la notificación");
+})
+})
+cerrar.addEventListener("click", function(){
+notificacion.close();
+})
+</script>
+</script>
+
+</body>
+</html>
